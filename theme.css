@@ -1,0 +1,17 @@
+:root[data-theme=light]{--bg:#EAF2FA;--bg2:#fff;--glass:rgba(255,255,255,.7);--bd:rgba(16,42,67,.14);--tx:#0B1F33;--tx2:#4A6075;--b2:#1673B0;--ok:#0A9D55;--warn:#B86E00;--bad:#D6304A}
+[data-theme=light] body{background:linear-gradient(135deg,#EAF2FA,#D3E6F6 55%,#F4F9FD);background-size:220% 220%}
+[data-theme=light] .glass{background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(255,255,255,.62));box-shadow:0 10px 30px rgba(16,42,67,.12),inset 0 1px 0 #fff}
+[data-theme=light] .sidebar{background:rgba(255,255,255,.75)}
+[data-theme=light] .nav:hover,[data-theme=light] .icon:hover,[data-theme=light] .sbox li button:hover{background:rgba(16,42,67,.07)}
+[data-theme=light] .pill{background:linear-gradient(135deg,rgba(45,153,220,.3),rgba(88,185,245,.15));border-color:rgba(31,134,200,.5);box-shadow:0 0 14px rgba(45,153,220,.2)}
+[data-theme=light] input,[data-theme=light] select,[data-theme=light] .srch{background:rgba(255,255,255,.9)}
+[data-theme=light] th,[data-theme=light] td,[data-theme=light] .kv{border-bottom-color:rgba(16,42,67,.09)}
+[data-theme=light] .kv.col,[data-theme=light] .bub{background:rgba(16,42,67,.06)}[data-theme=light] .bub.me{background:linear-gradient(135deg,#1F86C8,#2D99DC);color:#fff}
+[data-theme=light] .sw{background:rgba(16,42,67,.18)}[data-theme=light] .sw.on{background:var(--b1)}[data-theme=light] .bar div{background:rgba(16,42,67,.1)}
+[data-theme=light] .map{background:rgba(255,255,255,.55)}[data-theme=light] .map text{fill:#4A6075}
+[data-theme=light] .wm{background-image:linear-gradient(90deg,#0B1F33,#1F86C8,#0B1F33)}
+[data-theme=light] .recharts-cartesian-axis-tick text,[data-theme=light] .recharts-legend-item-text{fill:#4A6075!important;color:#4A6075!important}
+[data-theme=light] .recharts-cartesian-grid line{stroke:rgba(16,42,67,.12)}[data-theme=light] .recharts-cartesian-axis-line,[data-theme=light] .recharts-cartesian-axis-tick-line{stroke:rgba(16,42,67,.3)}
+[data-theme=light] .skel i{background:linear-gradient(90deg,rgba(16,42,67,.06),rgba(16,42,67,.16),rgba(16,42,67,.06));background-size:200%}
+[data-theme=light] .backdrop{background:rgba(16,42,67,.35)}[data-theme=light] .backdrop.clear{background:none}
+[data-theme=light] .power{background:rgba(255,255,255,.8)}

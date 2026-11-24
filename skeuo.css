@@ -1,0 +1,40 @@
+/* Skeuomorphic style: physical surfaces, bevels, recessed wells, pressable keys. Switch back via Settings > Appearance. */
+[data-style=skeuo]{--s1:#26394f;--s2:#142232;--well:#0a1522;--hi:rgba(255,255,255,.12);--lo:rgba(0,0,0,.5);--sh:rgba(0,0,0,.55);--rim:#08111c;--tx:#EAF2FA;--tx2:#9FB2C6;--ts:0 -1px 0 rgba(0,0,0,.6);--noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E")}
+[data-style=skeuo][data-theme=light]{--s1:#f8fbfe;--s2:#d3dfeb;--well:#c5d3e2;--hi:rgba(255,255,255,.95);--lo:rgba(16,42,67,.22);--sh:rgba(16,42,67,.3);--rim:#aebfd1;--tx:#0B1F33;--tx2:#46607a;--ts:0 1px 0 rgba(255,255,255,.9)}
+[data-style=skeuo] body{animation:none;background:var(--noise),radial-gradient(ellipse at 50% -10%,#1d3249,#0a1420 75%);background-attachment:fixed}
+[data-style=skeuo][data-theme=light] body{background:var(--noise),radial-gradient(ellipse at 50% -10%,#f4f8fc,#c9d8e8 85%);background-attachment:fixed}
+[data-style=skeuo] h1,[data-style=skeuo] h2,[data-style=skeuo] h3{text-shadow:var(--ts)}
+[data-style=skeuo] .glass{background:linear-gradient(160deg,var(--s1),var(--s2));backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--rim);border-radius:18px;box-shadow:0 10px 22px var(--sh),0 2px 4px var(--sh),inset 0 1px 0 var(--hi),inset 0 -2px 0 var(--lo)}
+[data-style=skeuo] .sidebar{background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px),linear-gradient(180deg,var(--s1),var(--s2));backdrop-filter:none;border-right:1px solid var(--rim);box-shadow:6px 0 18px var(--sh),inset -1px 0 0 var(--hi)}
+[data-style=skeuo] .topbar{border-bottom:1px solid var(--rim);box-shadow:0 1px 0 var(--hi)}
+[data-style=skeuo] .nav:hover,[data-style=skeuo] .icon:hover{background:linear-gradient(180deg,var(--hi),transparent)}
+[data-style=skeuo] .pill{background:linear-gradient(180deg,#0e3a5c,#1b6aa0);border:1px solid #0a2a44;box-shadow:inset 0 3px 8px rgba(0,0,0,.6),0 0 14px rgba(45,153,220,.45),inset 0 -1px 0 rgba(255,255,255,.2)}
+[data-style=skeuo] .nav.active{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.4)}
+[data-style=skeuo] .icon:active{box-shadow:inset 0 2px 5px var(--lo)}
+[data-style=skeuo] .btn{border-radius:12px;background:linear-gradient(180deg,#6cc4f8 0%,#2D99DC 48%,#1a74ad 52%,#1e86c6 100%);border:1px solid #0f4f7a;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.35);box-shadow:0 4px 0 #0f4f7a,0 8px 12px var(--sh),inset 0 1px 0 rgba(255,255,255,.55);transition:box-shadow .15s,filter .2s}
+[data-style=skeuo] .btn:hover:not(:disabled){filter:brightness(1.08);transform:none}
+[data-style=skeuo] .btn:active:not(:disabled){box-shadow:0 1px 0 #0f4f7a,inset 0 3px 8px rgba(0,0,0,.35);translate:0 3px}
+[data-style=skeuo] .btn.ghost{background:linear-gradient(180deg,var(--s1),var(--s2));color:var(--tx);text-shadow:none;border-color:var(--rim);box-shadow:0 4px 0 var(--rim),0 8px 12px var(--sh),inset 0 1px 0 var(--hi)}
+[data-style=skeuo] .btn.danger{background:linear-gradient(180deg,#ff8294 0%,#FF4D67 48%,#c2263f 52%,#d93352 100%);border-color:#7d1427;color:#fff;box-shadow:0 4px 0 #7d1427,0 8px 12px var(--sh),inset 0 1px 0 rgba(255,255,255,.5)}
+[data-style=skeuo] .btn:disabled{filter:grayscale(.6)}
+[data-style=skeuo] input,[data-style=skeuo] select,[data-style=skeuo] .srch{background:var(--well);color:var(--tx);border:1px solid var(--rim);box-shadow:inset 0 3px 7px var(--lo),0 1px 0 var(--hi)}
+[data-style=skeuo] .srch input{background:none;border:0;box-shadow:none}
+[data-style=skeuo] .scroll{background:var(--well);border-radius:12px;box-shadow:inset 0 3px 8px var(--lo);border:1px solid var(--rim)}
+[data-style=skeuo] tbody tr:nth-child(even){background:color-mix(in srgb,var(--hi) 22%,transparent)}
+[data-style=skeuo] th,[data-style=skeuo] td{border-bottom-color:var(--lo)}
+[data-style=skeuo] .badge,[data-style=skeuo] .chip{background:linear-gradient(180deg,var(--s1),var(--s2));border-color:var(--rim);box-shadow:inset 0 1px 0 var(--hi),0 1px 3px var(--sh)}
+[data-style=skeuo] .kpi-ic{background:var(--well);border:1px solid var(--rim);box-shadow:inset 0 3px 6px var(--lo),0 1px 0 var(--hi)}
+[data-style=skeuo] .bar div,[data-style=skeuo] .sw{background:var(--well);box-shadow:inset 0 3px 6px var(--lo)}
+[data-style=skeuo] .bar i{box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+[data-style=skeuo] .sw i{background:linear-gradient(180deg,#fdfdfd,#b3bfcc);box-shadow:0 2px 4px var(--sh),inset 0 1px 0 #fff}
+[data-style=skeuo] .sw.on{background:linear-gradient(180deg,#1a6aa0,#2D99DC);box-shadow:inset 0 3px 6px rgba(0,0,0,.5),0 0 8px rgba(45,153,220,.5)}
+[data-style=skeuo] .dot{background:radial-gradient(circle at 35% 30%,#b6ffd6,#00E676 45%,#00793d);border:2px solid var(--rim)}
+[data-style=skeuo] .tabs button,[data-style=skeuo] .chip2,[data-style=skeuo] .seg button{background:linear-gradient(180deg,var(--s1),var(--s2));border:1px solid var(--rim);color:var(--tx);box-shadow:0 2px 0 var(--rim),0 4px 8px var(--sh),inset 0 1px 0 var(--hi)}
+[data-style=skeuo] .tabs .on,[data-style=skeuo] .chip2.on,[data-style=skeuo] .seg .on,[data-style=skeuo] .conv.on{background:var(--well);color:var(--b2);box-shadow:inset 0 3px 7px var(--lo)}
+[data-style=skeuo] .avatar{border:3px solid var(--rim);box-shadow:0 0 0 2px var(--hi),0 4px 8px var(--sh),inset 0 2px 4px rgba(255,255,255,.3)}
+[data-style=skeuo] .map{background:var(--well);border:1px solid var(--rim);box-shadow:inset 0 4px 12px var(--lo)}
+[data-style=skeuo] .bub{background:linear-gradient(180deg,var(--s1),var(--s2));box-shadow:0 2px 4px var(--sh),inset 0 1px 0 var(--hi)}
+[data-style=skeuo] .bub.me{background:linear-gradient(180deg,#4fb2ee,#1f86c8);color:#fff}
+[data-style=skeuo] .kv.col{background:var(--well);box-shadow:inset 0 2px 5px var(--lo)}
+[data-style=skeuo] *::-webkit-scrollbar-track{background:var(--well);border-radius:8px;box-shadow:inset 0 0 4px var(--lo)}
+[data-style=skeuo] *::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#7b97b2,#38546e);border:1px solid var(--rim);background-clip:border-box;box-shadow:inset 1px 0 0 rgba(255,255,255,.35)}
